@@ -17,12 +17,7 @@ class UrlForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const id = Date.now()
-    const url = {
-      id: id,
-      ...this.state,
-      short_url: `http://localhost:3001/useshorturl/${id}`
-    }
+    const url = this.state
     this.props.addNewUrls(url)
     this.clearInputs();
   }
