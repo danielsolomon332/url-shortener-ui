@@ -10,5 +10,4 @@ export const postUrls = ({long_url, title}) => {
     body: JSON.stringify({long_url: long_url, title: title})
   })
   .then(res => res.json())
-  .then (data => console.log(data))
 }
